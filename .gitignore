@@ -1,0 +1,23 @@
+# Ignorar archivos de Eclipse
+.metadata/
+.settings/
+*.classpath
+*.project
+
+# Ignorar compilados
+*.class
+
+# Ignorar carpetas de build
+bin/
+target/
+build/
+
+# Ignorar archivos de IDEs
+.idea/
+*.iml
+.vscode/
+
+# Logs y otros
+*.log
+.DS_Store
+Thumbs.db
