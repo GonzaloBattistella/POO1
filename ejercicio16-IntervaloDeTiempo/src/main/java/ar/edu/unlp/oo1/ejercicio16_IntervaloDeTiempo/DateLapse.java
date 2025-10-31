@@ -33,4 +33,9 @@ public class DateLapse implements DateLapseInterface{
 	public boolean overlaps(DateLapse periodo) {
 		return !this.getTo().isBefore(periodo.getFrom()) && !this.getFrom().isAfter(periodo.getTo());
 	}
+	
+	public Integer cantDaysTo() {
+		//Retorna la cantidad de dias que hay entre la fecha actual y el inicio del periodo recibido como parametro.
+		return (int) ChronoUnit.DAYS.between(LocalDate.now(), this.getFrom());
+	}
 }
